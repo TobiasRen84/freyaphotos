@@ -1,0 +1,399 @@
+/* Färgvariabler */
+
+:root {
+    --dark-blue: #003A6B;
+    --blue-sapphire: #1B5886;
+    --queen-blue: #3776A1;
+    --silver-lake: #5293BB;
+    --iceberg: #6EB1D6;
+    --baby-blue: #89CFF1;
+
+    --white: #ffffff;
+}
+
+/* Grundinställningar */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--baby-blue);
+    font-family: Arial, sans-serif;
+    color: var(--dark-blue);
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background-color: var(--dark-blue);
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Meny */
+
+nav {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: var(--baby-blue);
+}
+
+/* Innehåll */
+
+main {
+    max-width: 1000px;
+    margin: 15px auto;
+    padding: 20px;
+}
+
+/* Välkomst-ruta */
+
+.welcome {
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.text {
+    flex: 1;
+}
+
+.welcome img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+.welcome h1 {
+    margin-bottom: 10px;
+    color: var(--queen-blue);
+}
+
+.welcome a {
+    color: var(--dark-blue);
+    text-decoration: none;
+    margin: 0 0px;
+    font-weight: bold;
+}
+
+.welcome a:hover {
+    text-decoration: underline;
+    color: var(--dark-blue);
+}
+
+/* Om oss */
+
+.about {
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.about img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about h1 {
+    margin-bottom: 10px;
+    color: var(--queen-blue);
+}
+
+.about h2 {
+    margin-bottom: 10px;
+    color: var(--blue-sapphire);
+}
+.about a {
+    color: var(--dark-blue);
+    text-decoration: none;
+    margin: 0 0px;
+    font-weight: bold;
+}
+
+.about a:hover {
+    text-decoration: underline;
+    color: var(--dark-blue);
+}
+/* Kontakt */
+
+.kontakt {
+    max-width: 800px;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+.kontakt form {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.kontakt label {
+    font-weight: bold;
+}
+
+.kontakt input[type="text"],
+.kontakt input[type="email"],
+.kontakt textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.kontakt textarea {
+    min-height: 120px;
+}
+
+.kontakt button {
+    width: 100%;
+    max-width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #003366;
+    color: white;
+    cursor: pointer;
+} 
+
+/* GDPR */
+
+.gdpr-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.gdpr-box input[type="checkbox"] {
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.gdpr-box label {
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* Vanliga Frågor */
+
+.faq {
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.text {
+    flex: 1;
+}
+
+.faq img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+.faq h1 {
+    margin-bottom: 10px;
+    color: var(--queen-blue);
+}
+
+.faq a {
+    color: var(--dark-blue);
+    text-decoration: none;
+    margin: 0 0px;
+    font-weight: bold;
+}
+
+.faq a:hover {
+    text-decoration: underline;
+    color: var(--dark-blue);
+}
+
+/* details och summary test */
+
+details {
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 10px;
+    background-color: var(--white);
+    border: 1px solid var(--baby-blue);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+}
+
+/* Själva frågan man klickar på */
+summary {
+    padding: 15px;
+    font-weight: bold;
+    color: var(--dark-blue);
+    cursor: pointer;
+    background-color: #f9fbfd; 
+    transition: background 0.2s ease;
+}
+
+/* Hover-effekt */
+summary:hover {
+    background-color: var(--baby-blue);
+    color: var(--dark-blue);
+}
+
+/* Svaren */
+details p {
+    padding: 15px;
+    margin: 0;
+    line-height: 1.6;
+    background-color: var(--white);
+    border-top: 1px solid #eee;
+}
+
+/* Bilder */
+
+.gallery {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+.bildkort {
+    text-align: center;
+}
+
+.bildkort img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.bildkort a {
+    display: block;
+    margin-top: 10px;
+    padding: 8px;
+    background-color: var(--queen-blue);
+    color: var(--white) !important; 
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.bildkort a:hover {
+    background-color: var(--dark-blue);
+    text-decoration: none;
+}
+
+main h2 {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: var(--dark-blue);
+}
+
+.about h2 {
+    margin-top: 0; 
+}
+
+/* Mjuk scrollning Bilder */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--dark-blue);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+} 
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--baby-blue);
+}
+
+/* Döljer Information */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Responsiv Design */
+
+@media (min-width: 768px) {
+    .welcome {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    .about {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+}
